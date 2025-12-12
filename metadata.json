@@ -1,0 +1,6 @@
+
+{
+  "name": "CineSphere - AI Movie Universe",
+  "description": "A futuristic movie recommendation platform powered by TMDB and Gemini AI, featuring a neon cinematic interface, smart AI-driven suggestions, and real-time movie exploration.",
+  "requestFramePermissions": []
+}
