@@ -4,7 +4,8 @@ import { Movie, MovieDetails, Genre } from '../types';
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 // NOTE: For this demo, we'll use a public-access-style approach or assume TMDB key handling.
 // In a real app, this would be an environment variable.
-const TMDB_API_KEY = '3f14f419d013f6465fe206d196f3f4d6'; // Standard demo key for TMDB testing
+const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+ // Standard demo key for TMDB testing
 
 async function fetchTMDB<T>(endpoint: string, params: Record<string, string> = {}): Promise<T> {
   const queryParams = new URLSearchParams({
